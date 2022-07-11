@@ -1,0 +1,1529 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+}
+
+/* Framework */
+
+#behind, .color {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.color {
+    background-color: rgb(30,30,30);
+}
+
+.accounts {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1650px;
+    height: 40px;
+    overflow: hidden;
+    box-sizing: border-box;
+    padding-top: 8px;
+}
+
+.shop {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1800px;
+    height: 90px;
+    overflow: hidden;
+}
+
+#background {
+    background-image: url(images/background.jpg);
+    height: 840px;
+    filter: brightness(80%);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#heading {
+    height: 110px;
+    background-color: rgb(230,230,230);
+    text-align: center;
+    color: rgb(0,0,0);
+    overflow: hidden;
+    font-size: 3.3rem;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-top: 20px;
+    transition: 0.4s;
+}
+
+#heading:hover {
+    color: rgb(0,162,232);
+}
+
+#none {
+    height: 70px;
+}
+
+#products {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1650px;
+    height: 900px;
+    overflow: hidden;
+    font-weight: bold;
+    box-sizing: border-box;
+    padding-left: 45px;
+}
+
+#goto {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1560px;
+    height: 100px;
+}
+
+.hamburger {
+    display: block;
+    width: 35px;
+    cursor: pointer;
+    height: 35px;
+    appearance: none;
+    background: none;
+    border: none;
+    appearance: none;
+    float: right;
+    position: relative;
+    margin-top: 23px;
+    margin-right: 80px;
+}
+
+.hamburger.is-active::before {
+    transform: rotate(-45deg) translate(-9px, 6px);
+    background-color: rgb(0,0,0);
+}
+
+.hamburger.is-active .bar{
+    opacity: 0;
+}
+
+.hamburger.is-active::after {
+    transform: rotate(45deg) translate(-9px, -6px);
+    background-color: rgb(0,0,0);
+}
+
+.hamburger .bar, .hamburger::after, .hamburger::before {
+    width: 100%;
+    height: 4px;
+    background-color: rgb(0,0,0);
+    margin: 7px 0;
+    transition: 0.4s ease;
+    display: block;
+    content: "";
+    border-radius: 20px;
+}
+
+.mobile-nav {
+    display: block;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 100%;
+    width: 30%;
+    min-height: 1650px;
+    background-color: rgb(255,255,255);
+    top: 129px;
+    padding-top: 30px;
+    transition: 0.4s;
+}
+
+.a {
+    width: 100%;
+    height: 60px;
+    font-weight: bold;
+    font-size: 21px;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    color: rgb(0,0,0);
+    transition: 0.3s;
+}
+
+.a:hover {
+    background-color: rgb(230,230,230);
+}
+
+.mobile-nav.is-active {
+    left: 70%;
+}
+
+.account1 {
+    width:34px;
+    height:34px;
+    background-image: url(images/user.png);
+    background-size: 93%;
+    background-repeat: no-repeat;
+    float: left;
+    margin-right: 20px;
+}
+
+.cart1 {
+    width:34px;
+    height:34px;
+    background-image: url(images/koszyk.png);
+    background-size: 93%;
+    background-repeat: no-repeat;
+    float: left;
+}
+
+.input1 {
+    width: 150px;
+    height: 20px;
+    border: 2px solid;
+    border-radius: 20px;
+    outline: none;
+}
+
+.inp::after {
+    content: url(images/lupa.png);
+    vertical-align: middle;
+    margin-left: 10px;
+}
+
+.inp {
+    display: flex;
+    width: 100%;
+    height: 70px;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.shoppin {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+}
+
+@media screen and (min-width:1100px) {
+    .hamburger, .mobile-nav {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1080px) {
+    .hamburger {
+        margin-right: 100px;
+    }
+}
+
+@media screen and (max-width:1070px) {
+    .hamburger {
+        margin-right: 110px;
+    }
+}
+
+@media screen and (max-width:1060px) {
+    .hamburger {
+        margin-right: 120px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    .hamburger {
+        margin-right: 130px;
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .hamburger {
+        margin-right: 140px;
+    }
+} 
+
+@media screen and (max-width: 1030px) {
+    .hamburger {
+        margin-right: 150px;
+    }
+} 
+
+@media screen and (max-width: 1020px) {
+    .hamburger {
+        margin-right: 160px;
+    }
+} 
+
+@media screen and (max-width: 1010px) {
+    .hamburger {
+        margin-right: 170px;
+    }
+} 
+
+@media screen and (max-width: 1000px) {
+    .hamburger {
+        margin-right: 180px;
+    }
+} 
+
+@media screen and (max-width: 980px) {
+    .hamburger {
+        margin-right: 190px;
+    }
+} 
+
+@media screen and (max-width:1640px){
+    #products {
+        max-width: 1450px;
+        padding-left: 160px;
+        height: 1340px;
+    }
+
+    #goto {
+        max-width: 1170px;
+    }
+
+    .accounts {
+        max-width: 1600px;
+    }
+}
+
+@media screen and (max-width:1570px) {
+    .accounts {
+        max-width: 1520px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    .accounts {
+        max-width: 1470px;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    #products {
+        max-width: 1350px;
+        padding-left: 110px;
+    }
+
+    .accounts {
+        max-width: 1400px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    .accounts {
+        max-width: 1380px;
+    }
+}
+
+@media screen and (max-width:1350px) {
+    #products {
+        max-width: 1250px;
+        padding-left: 55px;
+    }
+
+    .accounts {
+        max-width: 1280px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    #products {
+        max-width: 1050px;
+        padding-left: 170px;
+        height: 1800px;
+    }
+
+    #goto {
+        max-width: 730px;
+    }
+
+    .accounts {
+        max-width: 1200px;
+    }
+}
+
+@media  screen and (max-width:1200px)  {
+    .shop {
+        max-width: 1150px;
+    }
+}
+
+@media screen and (max-width:1180px) {
+    .accounts {
+        max-width: 1130px;
+    }
+}
+
+@media screen and (max-width:1100px) {
+    .accounts {
+        max-width: 1080px;
+    }
+
+    .koszulki, .bluzy, .koszule, .spodenki, .spodnie, .czapki, .buty, .account, .cart, #margin {
+        display: none;
+    }
+
+    .img {
+        margin-left: 15px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #products {
+        padding-left: 150px;
+    }
+
+    .accounts {
+        max-width: 1030px;
+    }
+}
+
+@media screen and (max-width:1030px) {
+    #products {
+        padding-left: 130px;
+    }
+}
+
+@media screen and (max-width:1000px) {
+    .accounts {
+        max-width: 990px;
+    }
+}
+
+/* */
+
+/* Top */
+
+.right {
+    width: 300px;
+    height: 30px;
+    float: right;
+    color: rgb(255,255,255);
+}
+
+.help {
+    width: 55px;
+    height: 30px;
+    float: left;
+}
+
+.register {
+    width: 108px;
+    height: 30px;
+    float: left;
+    padding-left: 5px;
+}
+
+.help, .register, .login, a {
+    text-decoration: none;
+    color: rgb(255,255,255);
+    transition: 0.3s;
+}
+
+.help, .register, .login, a:hover {
+    color: rgb(0,162,232);
+}
+
+.line {
+    width: 5px;
+    height: 30px;
+    float: left;
+}
+
+.login {
+    width: 100px;
+    float: left;
+    height: 30px;
+    padding-left: 5px;
+}
+
+/**/
+
+/* Menu */
+
+.option {
+    width: auto;
+    height: 90px;
+    float: left;
+    text-align: center;
+    font-size: 1.45rem;
+    box-sizing: border-box;
+    padding-top: 30px;
+    transition: 0.4s;
+    font-weight: bold;
+    color: rgb(0,0,0);
+}
+
+.option:hover {
+    background-color: rgb(230,230,230);
+    color: rgb(255,255,255);
+}
+
+.img {
+    width: 140px;
+    height: 90px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 9px;
+}
+
+.koszulki, .spodnie {
+    width: 130px;
+}
+
+.bluzy, .czapki {
+    width: 110px;
+}
+
+.koszule, .spodenki {
+    width: 140px;
+}
+
+#margin {
+    width: 100px;
+    height: 90px;
+    float: left;
+}
+
+#margin1 {
+    width: 150px;
+    height: 90px;
+    float: left;
+}
+
+.buty {
+    width: 100px;
+}
+
+.search {
+    width: 180px;
+    height: 90px;
+    float: left;
+    box-sizing: border-box;
+    padding-top: 35px;
+}
+
+.search::after {
+    content: url(images/lupa.png);
+    vertical-align: middle;
+}
+
+.input {
+    width: 130px;
+    height: 20px;
+    border: 1px solid rgb(0,0,0);
+    border-radius: 10px;
+}
+
+.account, .cart {
+    float: left;
+    width: 80px;
+    height: 90px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 10px;
+}
+
+.image {
+    width: 40px;
+    height: 40px;
+}
+
+#margin1 {
+    float: left;
+    width: 50px;
+    height: 90px;
+}
+
+@media screen and (max-width:1700px) {
+    #margin {
+        max-width: 60px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #margin {
+        max-width: 35px;
+    }
+
+    #margin1 {
+        max-width: 10px;
+    }
+
+    .account, .cart {
+        max-width: 70px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #margin {
+        max-width: 15px;
+    }
+
+    .koszulki, .spodnie {
+        max-width: 120px;
+    }
+
+    .bluzy, .czapki {
+        max-width: 100px;
+    }
+
+    .koszule, .spodenki {
+        max-width: 130px;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    .input, .search::after, .search {
+        display: none;
+    }
+
+    .image {
+        width: 35px;
+        height: 35px;
+    }
+    
+    #margin {
+        max-width: 60px;
+    }
+
+    .account, .cart {
+        height: 35px;
+        padding-top: 25px;
+    }
+
+    #margin1 {
+        display: none;
+    }
+
+    .czapki {
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    #margin {
+        max-width: 20px;
+    }
+}
+
+/* */
+
+/* Products */
+
+.cont {
+    width: 320px;
+    height: 400px;
+    float: left;
+    margin-right: 93px;
+    margin-bottom: 50px;
+    box-shadow: -7px -6px 37px -18px rgba(66, 68, 90, 1);
+}
+
+.container {
+    margin-right: 0px;
+}
+
+.cont:hover {
+    box-shadow: 7px 6px 37px -18px rgba(66, 68, 90, 1);
+}
+
+.product {
+    width: 100%;
+    height: 320px;
+    float: left;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    transition: 0.2s;
+}
+
+.description {
+    float: left;
+    width: 100%;
+    height: 35px;
+    color: rgb(0,0,0);
+    box-sizing: border-box;
+    padding-top: 10px;
+    padding-left: 6px;
+}
+
+.gender {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    box-sizing: border-box;
+    padding-left: 6px;
+}
+
+.price1, .price2, .price3, .price4, .price5, .price6, .price7, .price8 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.price9, .price10, .price11, .price12, .price13, .price14, .price15, .price16 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.price17, .price18, .price19, .price20, .price21, .price22, .price23, .price24 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.price25, .price26, .price27, .price28, .price29, .price30, .price31, .price32 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.price33, .price34, .price35, .price36, .price37, .price38, .price39, .price40 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.price41, .price42, .price43, .price44, .price45, .price46, .price47, .price48 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.price49, .price50, .price51, .price52, .price53, .price54, .price55, .price56 {
+    float: left;
+    width: 50%;
+    height: 35px;
+    color: rgb(0,162,232);
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 6px;
+}
+
+.b {
+    width: 130px;
+    float: right;
+    height: 60px;
+    background-color: rgb(20,20,20);
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 17px;
+    border-radius: 20px;
+    transition: 0.4s;
+    color: rgb(255,255,255);
+}
+
+.b:hover {
+    background-color: rgb(230,230,230);
+    color: rgb(0,0,0);
+}
+
+    @media screen and (max-width:1640px) {
+        .container {
+            margin-right: 93px;
+        }
+    }
+
+    @media screen and (max-width:1350px) {
+        .n {
+            margin-right: 0px;
+        } 
+    }
+
+    @media screen and (max-width:1250px) {
+        .n {
+            margin-right: 93px;
+        }
+    }
+
+/* */
+
+/* Pictures */
+
+.p1 {
+    background-image: url(images/adidas.png);
+}
+ 
+.p1:hover {
+    background-image: url(images/adidas-back.png);
+}
+ 
+.p2 {
+    background-image: url(images/adidas1.png);
+}
+  
+.p2:hover {
+    background-image: url(images/adidas1-back.png);
+}
+ 
+.p3 {
+    background-image: url(images/adidas2.png);
+}
+  
+.p3:hover {
+    background-image: url(images/adidas2-back.png);
+}
+ 
+.p4 {
+    background-image: url(images/adidas3.png);
+}
+ 
+.p4:hover {
+    background-image: url(images/adidas3-back.png);
+}
+ 
+.p5 {
+    background-image: url(images/adidas4.png);
+}
+ 
+.p5:hover {
+    background-image: url(images/adidas4-back.png);
+}
+ 
+.p6 {
+    background-image: url(images/adidas5.png);
+}
+ 
+.p6:hover {
+     background-image: url(images/adidas5-back.png);
+}
+ 
+.p7 {
+     background-image: url(images/adidas6.png);
+ }
+ 
+.p7:hover {
+    background-image: url(images/adidas6-back.png);
+}
+ 
+.p8 {
+    background-image: url(images/adidas7.png);
+}
+ 
+.p8:hover {
+    background-image: url(images/adidas7-back.png); 
+}
+
+.p9 {
+    background-image: url(images/adidas8.png);
+}
+
+.p9:hover {
+    background-image: url(images/adidas8-back.png);
+}
+
+.p10 {
+    background-image: url(images/adidas9.png);
+}
+
+.p10:hover {
+    background-image: url(images/adidas9-back.png);
+}
+
+.p11 {
+    background-image: url(images/adidas10.png);
+}
+
+.p11:hover {
+    background-image: url(images/adidas10-back.png);
+}
+
+.p12 {
+    background-image: url(images/adidas11.png);
+}
+
+.p12:hover {
+    background-image: url(images/adidas11-back.png);
+}
+
+.p13 {
+    background-image: url(images/adidas12.png);
+}
+
+.p13:hover {
+    background-image: url(images/adidas12-back.png);
+}
+
+.p14 {
+    background-image: url(images/adidas13.png);
+}
+
+.p14:hover {
+    background-image: url(images/adidas13-back.png);
+}
+
+.p15 {
+    background-image: url(images/adidas14.png);
+}
+
+.p15:hover {
+    background-image: url(images/adidas14-back.png);
+}
+
+.p16 {
+    background-image: url(images/adidas15.png);
+}
+
+.p16:hover {
+    background-image: url(images/adidas15-back.png);
+}
+
+.p17 {
+    background-image: url(images/koszula.png);
+}
+
+.p17:hover {
+    background-image: url(images/koszula-back.png);
+}
+
+.p18 {
+    background-image: url(images/koszula1.png);
+}
+
+.p18:hover {
+    background-image: url(images/koszula1-back.png);
+}
+
+.p19 {
+    background-image: url(images/koszula2.png);
+}
+
+.p19:hover {
+    background-image: url(images/koszula2-back.png);
+}
+
+.p20 {
+    background-image: url(images/koszula3.png);
+}
+
+.p20:hover {
+    background-image: url(images/koszula3-back.png);
+}
+
+.p21 {
+    background-image: url(images/koszula4.png);
+}
+
+.p21:hover {
+    background-image: url(images/koszula4-back.png);
+}
+
+.p22 {
+    background-image: url(images/koszula5.png);
+}
+
+.p22:hover {
+    background-image: url(images/koszula5-back.png);
+}
+
+.p23 {
+    background-image: url(images/koszula6.png);
+}
+
+.p23:hover {
+    background-image: url(images/koszula6-back.png);
+}
+
+.p24 {
+    background-image: url(images/koszula7.png);
+}
+
+.p24:hover {
+    background-image: url(images/koszula7-back.png);
+}
+
+.p25 {
+    background-image: url(images/adidas16.png);
+}
+
+.p25:hover {
+    background-image: url(images/adidas16-back.png);
+}
+
+.p26 {
+    background-image: url(images/adidas17.png);
+}
+
+.p26:hover {
+    background-image: url(images/adidas17-back.png);
+}
+
+.p27 {
+    background-image: url(images/adidas18.png);
+}
+
+.p27:hover {
+    background-image: url(images/adidas18-back.png);
+}
+
+.p28 {
+    background-image: url(images/adidas19.png);
+}
+
+.p28:hover {
+    background-image: url(images/adidas19-back.png);
+}
+
+.p29 {
+    background-image: url(images/adidas20.png);
+}
+
+.p29:hover {
+    background-image: url(images/adidas20-back.png);
+}
+
+.p30 {
+    background-image: url(images/adidas21.png);
+}
+
+.p30:hover {
+    background-image: url(images/adidas21-back.png);
+}
+
+.p31 {
+    background-image: url(images/adidas22.png);
+}
+
+.p31:hover {
+    background-image: url(images/adidas22-back.png)
+}
+
+.p32 {
+    background-image: url(images/adidas23.png);
+}
+
+.p32:hover {
+    background-image: url(images/adidas23-back.png);
+}
+
+.p33 {
+    background-image: url(images/adidas24.png);
+}
+
+.p33:hover {
+    background-image: url(images/adidas24-back.png);
+}
+
+.p34 {
+    background-image: url(images/adidas25.png);
+}
+
+.p34:hover {
+    background-image: url(images/adidas25-back.png);
+}
+
+.p35 {
+    background-image: url(images/adidas26.png);
+}
+
+.p35:hover {
+    background-image: url(images/adidas26-back.png);
+}
+
+.p36 {
+    background-image: url(images/adidas27.png);
+}
+
+.p36:hover {
+    background-image: url(images/adidas27-back.png);
+}
+
+.p37 {
+    background-image: url(images/adidas28.png);
+}
+
+.p37:hover {
+    background-image: url(images/adidas28-back.png);
+}
+
+.p38 {
+    background-image: url(images/adidas29.png);
+}
+
+.p38:hover {
+    background-image: url(images/adidas29-back.png);
+}
+
+.p39 {
+    background-image: url(images/adidas30.png);
+}
+
+.p39:hover {
+    background-image: url(images/adidas30-back.png);
+}
+
+.p40 {
+    background-image: url(images/adidas31.png);
+}
+
+.p40:hover {
+    background-image: url(images/adidas31-back.png);
+}
+
+.p41 {
+    background-image: url(images/adidas32.png);
+}
+
+.p41:hover {
+    background-image: url(images/adidas32-back.png);
+}
+
+.p42 {
+    background-image: url(images/adidas33.png);
+}
+
+.p42:hover {
+    background-image: url(images/adidas33-back.png);
+}
+
+.p43 {
+    background-image: url(images/adidas34.png);
+}
+
+.p43:hover {
+    background-image: url(images/adidas34-back.png);
+}
+
+.p44 {
+    background-image: url(images/adidas35.png);
+}
+
+.p44:hover {
+    background-image: url(images/adidas35-back.png);
+}
+
+.p45 {
+    background-image: url(images/adidas36.png);
+}
+
+.p45:hover {
+    background-image: url(images/adidas36-back.png);
+}
+
+.p46 {
+    background-image: url(images/adidas37.png);
+}
+
+.p46:hover {
+    background-image: url(images/adidas37-back.png);
+}
+
+.p47 {
+    background-image: url(images/adidas38.png);
+}
+
+.p47:hover {
+    background-image: url(images/adidas38-back.png);
+}
+
+.p48 {
+    background-image: url(images/adidas39.png);
+}
+
+.p48:hover {
+    background-image: url(images/adidas39-back.png);
+}
+
+.p49 {
+    background-image: url(images/adidas40.png);
+}
+
+.p49:hover {
+    background-image: url(images/adidas40-back.png);
+}
+
+.p50 {
+    background-image: url(images/adidas41.png);
+}
+
+.p50:hover {
+    background-image: url(images/adidas41-back.png);
+}
+
+.p51 {
+    background-image: url(images/adidas42.png);
+}
+
+.p51:hover {
+    background-image: url(images/adidas42-back.png);
+}
+
+.p52 {
+    background-image: url(images/adidas43.png);
+}
+
+.p52:hover {
+    background-image: url(images/adidas43-back.png);
+}
+
+.p53 {
+    background-image: url(images/adidas44.png);
+}
+
+.p53:hover {
+    background-image: url(images/adidas44-back.png);
+}
+
+.p54 {
+    background-image: url(images/adidas45.png);
+}
+
+.p54:hover {
+    background-image: url(images/adidas45-back.png);
+}
+
+.p55 {
+    background-image: url(images/adidas46.png);
+}
+
+.p55:hover {
+    background-image: url(images/adidas46-back.png);
+}
+
+.p56 {
+    background-image: url(images/adidas47.png);
+}
+
+.p56:hover {
+    background-image: url(images/adidas47-back.png);
+}
+
+/* */
+
+/* Bottom */
+
+.black {
+    background-color: rgb(20,20,20);
+}
+
+#bottom {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1550px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.yes {
+    padding-top: 40px;
+}
+
+.side {
+    height: 250px;
+    width: 310px;
+    float: left;
+    font-size: 1rem;
+}
+
+.side p {
+    color: rgb(255,255,255);
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 23px;
+}
+
+.side1 {
+    width: 330px;
+    text-align: right;
+}
+
+.pause, .pause0, .pause1 {
+    float: left;
+    width: 100px;
+    height: 250px;
+}
+
+.middle {
+    float: left;
+    width: 340px;
+    height: 230px;
+}
+
+.middle, .middle1, h3 {
+    color: rgb(255,255,255);
+    font-weight: bold;
+    font-size: 1rem;
+    display: inline-block;
+    margin-bottom: 23px;
+}
+
+.middle, .middle1, p {
+    color: rgb(126,126,126);
+    font-weight: bold;
+    transition: 0.3s;
+    display: inline-block;
+    margin-bottom: 23px;
+}
+
+.middle, .middle1, p:hover {
+    color: rgb(255,255,255);
+}
+
+.middle1 {
+    float: left;
+    width: 270px;
+    height: 230px;
+}
+
+@media screen and (min-width:1251px) and (max-width:99999px) {
+    #mid {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1600px) {
+    #bottom, #bottom1 {
+        max-width: 1450px;
+    }
+    
+    .pause, .pause1 {
+        max-width: 50px;
+    }
+
+    .middle1 {
+        max-width: 240px;
+    }
+
+    .side {
+        margin-left: 10px;
+    }
+}
+
+@media screen and (max-width:1500px) {
+    #bottom, #bottom1 {
+        max-width: 1350px;
+    }
+
+    .pause {
+        display: none;
+    }
+
+    .side {
+        margin-left: 0px
+    }
+
+    .middle {
+        max-width: 320px;
+    }
+
+    .middle1 {
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width:1400px) {
+    #bottom, #bottom1 {
+        max-width: 1250px;
+    }
+   
+    .middle {
+        max-width: 270px;
+    }
+
+    .pause1 {
+        display: none;
+    }
+}
+
+@media screen and (max-width:1300px) {
+    #bottom, #bottom1 {
+        max-width: 1200px;
+    }
+
+    .pause0 {
+       max-width: 30px;
+    }
+
+    .middle {
+        max-width: 300px;
+    }
+}
+
+@media screen and (max-width:1250px) {
+    #bottom {
+        max-width: 1100px;
+        height: 530px;
+    }
+
+    .side, .pause0, .pause, .middle, .middle1, .pause1, .side, .side1 {
+        display: none;
+    }
+
+    #mid {
+        width: 1100px;
+        height: 60px;
+        float: left;
+        box-sizing: border-box;
+        text-align: center;
+        overflow: hidden;
+        padding-top: 15px;
+    }
+
+    #mid h3 {
+        font-size: 1.2rem;
+    }
+
+    #mid:hover {
+        height: 275px;
+    }
+
+    .mid-big {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width:1150px) {
+    #bottom, #mid, #bottom1 {
+        max-width: 1000px;
+    }
+}
+
+@media screen and (max-width:1050px) {
+    #bottom, #mid, #bottom1 {
+        max-width: 900px;
+    }
+}
+
+/* */
+
+/* END */
+
+#com {
+    width: 300px;
+    height: 200px;
+    float: left;
+}
+
+#bottom1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1550px;
+    height: auto;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.contact {
+    float: left;
+    width: 170px;
+    height: 50px;
+}
+
+.contact1 {
+    width: 300px;
+    height: 50px;
+    float: left;
+}
+
+.contact::before {
+    content: url(images/phone.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contact1::before {
+    content: url(images/email.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+.contact, .contact1 a {
+    font-weight: bold;
+}
+
+#location {
+    float: left;
+    width: 150px;
+    height: 50px;
+    margin-top: 20px;
+}
+
+#location::before {
+    content: url(images/location.png);
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+#location a {
+    font-weight: bold;
+}
+
+#socials {
+    float: right;
+    width: 179px;
+    height: 100px;
+    margin-top: 15px;
+}
+
+.media, .media img {
+    width: 35px;
+    height: 35px;
+    float: left;
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+
+.no {
+    margin: 0px;
+}
+
+#price {
+    width: 50px;
+    border: 1px solid black;
+    height: 30px;
+    font-weight: bold;
+    margin-left: 65px;
+    outline: none;
+    border: none;
+}
+
+.button {
+    margin-left: 10px;
+    width: 48px;
+    height: 27px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+.button:hover {
+    background-color: rgb(0,162,232);
+    color: rgb(255,255,255);
+}
+
+/* */
